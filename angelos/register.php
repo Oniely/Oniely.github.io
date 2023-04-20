@@ -3,6 +3,7 @@
 
 <head>
 	<title>Angelos</title>
+	<link rel="icon" href="images/Angelos.png">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="css/login.css" rel="stylesheet">
@@ -45,7 +46,7 @@
 							<input type="password" value="" name="regPass" class="input" id="regPass" placeholder="Password" required>
 						</div>
 					</div>
-					<a href="login.php" class="signIn">Already have an account?</a>
+					<a href="index.php" class="signIn">Already have an account?</a>
 					<button type="button" class="logBtn" id="nextBtn">Next</button>
 
 					<p id="warning2"></p>
@@ -365,7 +366,12 @@
 				$conn = new mysqli($servername, $username, $password, $database);
 
 				if ($conn->connect_error) {
-					die("Connection failed: $conn->connect_error");
+					echo '
+					<script>
+
+					document.getElementById("warning").innerHTML = "Connection Failed: Failed to Connect! ";
+
+					</script>';
 				}
 
 				$regUser = $_POST["regUser"];

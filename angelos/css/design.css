@@ -38,8 +38,8 @@ header .logo {
 
 .navbar {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 .navbar li {
@@ -329,6 +329,7 @@ header .logo {
 .na-header h1{
     font-size: 70px;
     line-height: 65px;
+	text-align: center;
 }
 
 .na-header p {
@@ -438,13 +439,15 @@ header .logo {
 }
 
 .f-container {
-    display: flex;
-    justify-content:space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+	width: 100%;
     height: 35vh;
     color: white;
     background-color: #27201A;
     align-items: center;
     padding: 0 60px;
+	overflow: hidden;
 }
 
 .f-container h4 {
@@ -457,17 +460,27 @@ header .logo {
 	flex-direction: column;
     text-decoration: none;
 	align-items: flex-start;
-	margin-right: 20px;
+	width: auto;
+	height: 100%;
 }
 
 .f3 {
 	display: flex;
-    margin-bottom: 95px;
-	padding: 10px
+	flex-wrap: wrap;
+	padding: 15px;
+	justify-content: flex-end;
+	align-items: flex-start;
+	height: 80%;
+}
+
+.f-links {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
 }
 
 .f3 i {
-    font-size: 30px;
+    font-size: 1.8rem;
     margin: 0 8px;
     padding: 3px;
     border-radius: 30px;
@@ -499,13 +512,13 @@ header .logo {
     display: flex;
     width: 100%;
     justify-content: center;
-    padding: 15px 0;
+    padding: 10px 0;
 }
 
 .hline hr {
     width: 90%;
     border: none;
-    border-bottom: 0.5px solid #606063;
+    border-top: 0.5px solid #606063;
 }
 
 .sponsors {
@@ -519,7 +532,7 @@ header .logo {
 .sponsors .spons {
     width: 30%;
     height: auto;
-    transition: 0.6s ease;
+    transition: 0.5s ease;
 }
 
 .sponsors .spons img {
@@ -553,16 +566,19 @@ header .logo {
 .preview {
     margin: 0;
     padding: 0;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
+	position: relative;
+	overflow: hidden;
 }
 
 .slider {
     width: 900px;
     height: 500px;
     border-radius: 10px;
+	position: relative;
     overflow: hidden;
 }
 
@@ -570,6 +586,8 @@ header .logo {
     width: 500%;
     height: 500px;
     display: flex;
+	position: relative;
+	overflow: hidden;
 }
 
 .slide input {
@@ -579,11 +597,14 @@ header .logo {
 .st {
     width: 20%;
     transition: 2s;
+	overflow: hidden;
 }
 
 .st img {
-    width: 900px;
-    height: 500px;
+    width: 100%;
+	height: 100%;
+	object-fit: cover;
+	overflow: hidden;
 }
 
 .nav-m {
@@ -592,6 +613,9 @@ header .logo {
     margin-top: -40px;
     justify-content: center;
     display: flex;
+	overflow-x: hidden;
+	align-items: center;
+	
 }
 
 .m-btn {
@@ -600,27 +624,35 @@ header .logo {
     border-radius: 10px;
     cursor: pointer;
     transition: 1s;
+	overflow-x: hidden;
+	align-items: center;
 }
 
 .m-btn:not(:last-child) {
     margin-right: 30px;
+	overflow-x: hidden;
 }
 
 .m-btn:hover {
     background-color: #f16896;
+
 }
 
 #radio1:checked ~.first {
     margin-left: 0;
+	
 }
 #radio2:checked ~.first {
     margin-left: -20%;
+	
 }
 #radio3:checked ~.first {
     margin-left: -40%;
+	
 }
 #radio4:checked ~.first {
     margin-left: -60%   ;
+	
 }
 
 .nav-auto {
@@ -684,6 +716,7 @@ header .logo {
 .banner h2, p {
     padding: 20px 0;
     line-height: 15px;
+	text-align: center;
 }
 
 .banner u {
@@ -704,10 +737,12 @@ header .logo {
 
 .contact-us {
     width: 100%;
-    height: 115vh;
+    height: 110vh;
     background-size: cover;
     display: flex;
     flex-direction: column;
+	overflow-x: hidden;
+	background-position: top 50% left 70%;
 }
 
 .con-text {
@@ -716,6 +751,7 @@ header .logo {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+	flex-wrap: wrap;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
@@ -732,6 +768,7 @@ header .logo {
     line-height: 40px;
     margin-left: 60px;
     color: rgb(30, 30, 30);
+	text-align: left;
 }
 
 .con-text a {
@@ -779,6 +816,7 @@ header .logo {
     justify-content: center;
     align-items: center;
     color: #f5f5f5;
+	overflow-x: hidden;
 }
 
 .form-text {
@@ -791,9 +829,10 @@ header .logo {
     align-items: flex-start;
     cursor: default;
     box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+	text-align: left;
 }
 
-.con-header {
+.form-text .con-header {
     margin: 25px 30px 0;
     padding: 5px;
 }
@@ -804,6 +843,7 @@ header .logo {
 
 .con-header p {
     font-size: 14px;
+	text-align: left;
 }
 
 .con-info {
@@ -814,6 +854,7 @@ header .logo {
 .con-info p {
     font-size: 16px;
     line-height: 50px;
+	text-align: left;
 }
 
 .con-info .icon {
@@ -949,6 +990,7 @@ header .logo {
     justify-content: center;
     align-items: center;
     background-color: #F5EBE0;
+	overflow-x: hidden;
 }
 
 .account .header {

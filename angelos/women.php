@@ -3,6 +3,7 @@
 
 <head>
     <title>Angelos</title>
+	<link rel="icon" href="images/Angelos.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/design.css" rel="stylesheet">
@@ -23,7 +24,7 @@
 
 		<nav>
 			<ul class="navbar" id="navbar" data-visible="false">
-				<li><a id="nav1"  href="index.php">Home</a></li>
+				<li><a id="nav1"  href="home.php">Home</a></li>
 				<li><a id="nav2" href="men.php">Men</a></li>
 				<li><a id="nav3" class="active" href="women.php">Women</a></li>
 				<li><a id="nav4" href="contact.php">Contact</a></li>
@@ -52,7 +53,7 @@
                     <input type="radio" name="radio-btn" id="radio4">
 
                     <div class="st first">
-                        <img src="images/koujiaofangliao on Twitter.jfif" alt="drip">
+                        <img src="images/nikezzz.png" alt="drip">
                     </div>
                     <div class="st">
                         <img src="images/nikes2.png" alt="drip">

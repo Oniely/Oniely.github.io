@@ -8,24 +8,25 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="css/design.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body id="ov">
-	<header class=".resize-animation-stopper">
-		<a href="index.php"><img src="images/Angelos.png" alt="logo" class="logo"></a>
+<body>
+<header class=".resize-animation-stopper">
+		<a href="home.php"><img src="images/Angelos.png" alt="logo" class="logo"></a>
 
 		<button class="mobile-toggle" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
 			<svg width="100" height="100" viewBox="0 0 100 100">
-				<path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-				<path class="line line2" d="M 20,50 H 80" />
-				<path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+			  <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+			  <path class="line line2" d="M 20,50 H 80" />
+			  <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
 			</svg>
-		</button>
+		  </button>
 
 		<nav>
 			<ul class="navbar" id="navbar" data-visible="false">
-				<li><a id="nav1" href="home.php">Home</a></li>
-				<li><a id="nav2" class="active" href="men.php">Men</a></li>
+				<li><a id="nav1" class="active" href="#">Home</a></li>
+				<li><a id="nav2" href="men.php">Men</a></li>
 				<li><a id="nav3" href="women.php">Women</a></li>
 				<li><a id="nav4" href="contact.php">Contact</a></li>
 				<li><a id="nav5" href="account.php">Account</a></li>
@@ -36,72 +37,20 @@
 
 	</header>
 
-	<section>
+	<section class="hero" style="background-image: url('images/bg3.jpg');">
+		<h4>New Arrivals</h4>
+		<h2>Super deals</h2>
+		<h1>On all products</h1>
+		<p>Save up to 70% off with coupons</p>
+		<a href="#"><button style="background-image: url('images/q2.png')">Shop Now!</button></a>
+	</section>
+
+	<section class="new-arrivals" id="qwe">
+
 		<div class="na-header">
-			<h1>Men </h1>
-			<p>"Impossible is Nothing."</p>
+			<h1>New Arrivals</h1>
+			<p>"Just Do It."</p>
 		</div>
-	</section>
-
-	<section id="body">
-		<div class="preview">
-			<div class="slider">
-				<div class="slide">
-					<input type="radio" name="radio-btn" id="radio1">
-					<input type="radio" name="radio-btn" id="radio2">
-					<input type="radio" name="radio-btn" id="radio3">
-					<input type="radio" name="radio-btn" id="radio4">
-
-					<div class="st first">
-						<img src="images/nikezzz.png" alt="drip">
-					</div>
-					<div class="st">
-						<img src="images/nikes2.png" alt="drip">
-					</div>
-					<div class="st">
-						<img src="images/nike3.jpg" alt="drip">
-					</div>
-					<div class="st">
-						<img src="images/nikes3.jpg" alt="drip">
-					</div>
-
-					<div class="nav-auto">
-						<div class="a-b1"></div>
-						<div class="a-b2"></div>
-						<div class="a-b3"></div>
-						<div class="a-b4"></div>
-					</div>
-
-				</div>
-				<div class="nav-m">
-					<label for="radio1" class="m-btn"></label>
-					<label for="radio2" class="m-btn"></label>
-					<label for="radio3" class="m-btn"></label>
-					<label for="radio4" class="m-btn"></label>
-				</div>
-			</div>
-		</div>
-	</section>
-	<script type="text/javascript">
-		var counter = 1;
-		setInterval(function() {
-			document.getElementById('radio' + counter).checked = true;
-			counter++;
-			if (counter > 4) {
-				counter = 1;
-			}
-		}, 3000)
-	</script>
-
-	<section class="banner-container">
-		<div class="banner">
-			<h2>12.12 Sale</h2>
-			<p>Enjoy Discounted Products Till 12 Dec. - Use code <u>12Sale</u>.</p>
-			<a href="#products"><img src="images/nikebg.jpg" alt="sale"></a>
-		</div>
-	</section>
-
-	<section class="new-arrivals">
 
 		<div class="sales">
 			<div class="product-container">
@@ -124,6 +73,23 @@
 				</div>
 
 				<div class="products">
+					<img src="images/nike.jpg" alt="Shoes">
+					<div class="desc">
+						<span>Nike</span>
+						<h5>Nike Pegasus 39 Premium</h5>
+						<div class="stars">
+							<i class='bx bxs-star'></i>
+							<i class='bx bxs-star'></i>
+							<i class='bx bxs-star'></i>
+							<i class='bx bxs-star'></i>
+							<i class='bx bxs-star'></i>
+						</div>
+						<h4>$135</h4>
+					</div>
+					<a href="#"><i class='bx bx-cart-alt cart'></i></a>
+				</div>
+
+				<div class="products">
 					<img src="images/men2.jpg" alt="Shoes">
 					<div class="desc">
 						<span>Nike</span>
@@ -136,40 +102,6 @@
 							<i class='bx bxs-star'></i>
 						</div>
 						<h4>$110</h4>
-					</div>
-					<a href="#"><i class='bx bx-cart-alt cart'></i></a>
-				</div>
-
-				<div class="products">
-					<img src="images/men3.jpg" alt="Shoes">
-					<div class="desc">
-						<span>Nike</span>
-						<h5>Nike Air Max 90 G</h5>
-						<div class="stars">
-							<i class='bx bxs-star'></i>
-							<i class='bx bxs-star'></i>
-							<i class='bx bxs-star'></i>
-							<i class='bx bxs-star'></i>
-							<i class='bx bxs-star'></i>
-						</div>
-						<h4>$115</h4>
-					</div>
-					<a href="#"><i class='bx bx-cart-alt cart'></i></a>
-				</div>
-
-				<div class="products">
-					<img src="images/men4.jpg" alt="Shoes">
-					<div class="desc">
-						<span>Adidas</span>
-						<h5>NMD_R1 Primeblue Shoes - Black</h5>
-						<div class="stars">
-							<i class='bx bxs-star'></i>
-							<i class='bx bxs-star'></i>
-							<i class='bx bxs-star'></i>
-							<i class='bx bxs-star'></i>
-							<i class='bx bxs-star'></i>
-						</div>
-						<h4>$165</h4>
 					</div>
 					<a href="#"><i class='bx bx-cart-alt cart'></i></a>
 				</div>
@@ -192,23 +124,6 @@
 				</div>
 
 				<div class="products">
-					<img src="images/men6.jpg" alt="Shoes">
-					<div class="desc">
-						<span>Adidas</span>
-						<h5>Forum Low Shoes - White</h5>
-						<div class="stars">
-							<i class='bx bxs-star'></i>
-							<i class='bx bxs-star'></i>
-							<i class='bx bxs-star'></i>
-							<i class='bx bxs-star'></i>
-							<i class='bx bxs-star'></i>
-						</div>
-						<h4>$125</h4>
-					</div>
-					<a href="#"><i class='bx bx-cart-alt cart'></i></a>
-				</div>
-
-				<div class="products">
 					<img src="images/newbalshoes1.jpg" alt="Shoes">
 					<div class="desc">
 						<span>New Balance</span>
@@ -226,10 +141,10 @@
 				</div>
 
 				<div class="products">
-					<img src="images/newbalshoes2.jpg" alt="Shoes">
+					<img src="images/men6.jpg" alt="Shoes">
 					<div class="desc">
-						<span>New Balance</span>
-						<h5>Fresh Foam X 860v13</h5>
+						<span>Adidas</span>
+						<h5>Forum Low Shoes - White</h5>
 						<div class="stars">
 							<i class='bx bxs-star'></i>
 							<i class='bx bxs-star'></i>
@@ -237,24 +152,7 @@
 							<i class='bx bxs-star'></i>
 							<i class='bx bxs-star'></i>
 						</div>
-						<h4>$140</h4>
-					</div>
-					<a href="#"><i class='bx bx-cart-alt cart'></i></a>
-				</div>
-
-				<div class="products">
-					<img src="images/newbalshoes3.jpg" alt="Shoes">
-					<div class="desc">
-						<span>New Balance</span>
-						<h5>928v3</h5>
-						<div class="stars">
-							<i class='bx bxs-star'></i>
-							<i class='bx bxs-star'></i>
-							<i class='bx bxs-star'></i>
-							<i class='bx bxs-star'></i>
-							<i class='bx bxs-star'></i>
-						</div>
-						<h4>$145</h4>
+						<h4>$125</h4>
 					</div>
 					<a href="#"><i class='bx bx-cart-alt cart'></i></a>
 				</div>
@@ -270,18 +168,22 @@
 
 			<div class="f1">
 				<h4>Site Links</h4>
-				<a href="#"><span>Contact Us</span></a>
-				<a href="#"><span>About us</span></a>
-				<a href="#"><span>Direction</span></a>
-				<a href="#"><span>Blog</span></a>
+				<div class="f-links">
+					<a href="#"><span>Contact Us</span></a>
+					<a href="#"><span>About us</span></a>
+					<a href="#"><span>Direction</span></a>
+					<a href="#"><span>Blog</span></a>
+				</div>
 			</div>
 
 			<div class="f2">
 				<h4>Information</h4>
-				<a href="#"><span>Promotion</span>
+				<div class="f-links">
+					<a href="#"><span>Promotion</span>
 					<a href="#"><span>Partners</span></a>
 					<a href="#"><span>Careers</span></a>
 					<a href="#"><span>FAQs</span></a>
+				</div>
 			</div>
 
 			<div class="f3">
