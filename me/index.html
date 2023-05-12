@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="./css/styles.css" />
+
+	<!--for faster connection of google fonts meaning faster website load-->
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+
+	<!--recommend to not import google font but link it in html for faster loading speed-->
+	<link
+		href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+		rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Fira+Code:300,regular,500,600,700" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Audiowide:regular" rel="stylesheet" />
+	<link
+		href="https://fonts.googleapis.com/css?family=Ibarra+Real+Nova:regular,500,600,700,italic,500italic,600italic,700italic"
+		rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Bruno+Ace:regular" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic" rel="stylesheet" />
+
+	<title>Niel Angelo Gencaya</title>
+</head>
+
+<body>
+	<header class=".resize-animation-stopper">
+
+		<video id="background-video" autoplay loop muted poster="./images/colorful-bg.mp4">
+			<source src="./images/colorful-bg.mp4" type="video/mp4">
+			</video>
+
+		<nav>
+			<div class="credits-top">
+				<a href="index.html">
+					<span>&copy;</span>
+					<p>Oniely</p>
+				</a>
+			</div>
+			<ul class="nav-links" data-visible="false">
+				<li><a href="#about">About</a></li>
+				<li><a href="#works">Work</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+			<button class="burger"
+				onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+				aria-label="Main Menu">
+				<svg width="100" height="100" viewBox="0 0 100 100">
+					<path class="line line1"
+						d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+					<path class="line line2" d="M 20,50 H 80" />
+					<path class="line line3"
+						d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+				</svg>
+			</button>
+		</nav>
+		<div class="center">
+			<div class="logo"><img src="./images/WUI-white.png" alt="WUI" /></div>
+			<div class="role">
+				<span>
+					<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg"
+						xmlns:xlink="http://www.w3.org/1999/xlink">
+						<title>arrow-up-right</title>
+						<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							<g id="Artboard" transform="translate(-1019.000000, -279.000000)" stroke="#FFFFFF"
+								stroke-width="1.5">
+								<g id="arrow-up-right"
+									transform="translate(1026.000000, 286.000000) rotate(90.000000) translate(-1026.000000, -286.000000) translate(1020.000000, 280.000000)">
+									<polyline id="Path" points="2.76923077 0 12 0 12 9.23076923"></polyline>
+									<line x1="12" y1="0" x2="0" y2="12" id="Path"></line>
+								</g>
+							</g>
+						</g>
+					</svg>
+				</span>
+				<h3>IT Student</h3>
+				<h3>Designer & Developer</h3>
+			</div>
+		</div>
+		<div class="bigname-btm">
+			<div class="sliding-text">
+				<h1 id="slide1">Niel Angelo Gencaya</h1>
+				<h1 id="slide2">Niel Angelo Gencaya</h1>
+			</div>
+		</div>
+		<div class="img-container">
+			<img src="./images/oniel.png" alt="hero" />
+		</div>
+	</header>
+
+
+	<section class="SLGN">
+		<div class="slogan-container">
+			<div class="slogan">
+				<h1>Let's Bring</h1>
+				<h1>Your Vision</h1>
+				<h1>to <span>Life</span></h1>
+			</div>
+			<div class="greetings">
+				<h1>Hello!</h1>
+				<h3>As you may have noticed my name is <span>Niel Angelo Gencaya</span></h3>
+				<h3>The <span>developer</span> of Wardell UI Team (and occasionaly designer)</h3>
+				<h3>Here to help you integrate designs and concepts into your</h3>
+				<h3>Personal or Professional projects.</h3>
+			</div>
+		</div>
+		<div class="contact">
+			<div class="left-side">
+				<a href="https://www.github.com/oniely" target="_blank">
+					<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+						stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+						class="feather feather-github">
+						<title>GitHub</title>
+						<path
+							d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+						</path>
+					</svg>
+				</a>
+				<a href="https://www.instagram.com/oniely22/" target="_blank">
+					<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+						stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+						class="feather feather-instagram">
+						<title>Instagram</title>
+						<rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+						<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+						<line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+					</svg>
+				</a>
+				<a href="https://www.linkedin.com/in/niel-angelo-gencaya-178904272/" target="_blank">
+					<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+						stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+						class="feather feather-linkedin">
+						<title>LinkedIn</title>
+						<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+						<rect x="2" y="9" width="4" height="12"></rect>
+						<circle cx="4" cy="4" r="2"></circle>
+					</svg>
+				</a>
+				<a href="https://www.facebook.com/nielangelo.gencaya" target="_blank">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" viewBox="0 0 24 24"
+						fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+						stroke-linejoin="round" transform: ;msFilter:;" class="feather feather-facebook">
+						<title>Facebook</title>
+						<path
+							d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z">
+						</path>
+					</svg>
+				</a>
+			</div>
+
+			<div class="right-side">
+				<a href="mailto:jabagatniel09@gmail.com">jabagatniel09@gmail.com</a>
+			</div>
+
+			<a href="#about">
+				<div class="arrow-container">
+					<div class="arrow-down"></div>
+				</div>
+			</a>
+		</div>
+	</section>
+
+
+	<section class="about" id="about">
+
+		<div class="about-header">
+			<h1>About<span>.</span></h1>
+		</div>
+
+		<div class="about-me">
+
+			<div class="intro">
+				<h1>I'm Niel. A developer.</h1>
+				<h2>maker and problem Solver.</h2>
+			</div>
+
+			<div class="desc">
+				<p>Since yesterday, I've enjoyed turning complex problems into simple, beautiful and intuitive designs.
+					When I'm not pushing pixels, you'll find me gaming, sleeping or being sleepy.
+					<br>
+					<br>
+					I'm a student developer who's passionate about using technology to create solutions that make
+					people's lives easier. I believe in using the right tools and technologies for each project, and I'm
+					always eager to learn new ones.
+					<br>
+					<br>
+					On this website, you'll find some of my recent projects that showcase my skills and interests. I
+					believe in constantly learning and improving, and I'm excited to share my journey with you. Take a
+					look around and feel free to contact me if you have any questions or feedback. Let's connect and
+					create something awesome together!
+				</p>
+				<a href="#" class="about-btn">DOWNLOAD CV</a>
+			</div>
+
+			<div class="mepic">
+				<div class="container">
+					<img src="./images/home-hero.png" alt="me">
+				</div>
+			</div>
+
+		</div>
+
+	</section>
+
+	<section class="works" id="works">
+
+		<div class="header-container">
+			<h1>Featured Projects</h1>
+			<h3>Welcome to my digital space!</h3>
+			<h3>Take a look at my works and let me know what you think.</h3>
+		</div>
+
+		<div class="project-container">
+
+			<div class="project pj1">
+
+				<div class="p-img">
+					<a href="#">
+						<img src="./images/angelos-web.png" alt="1">
+					</a>
+				</div>
+
+				<div class="p-content">
+
+					<div>
+						<span>Featured Project</span>
+						<h3>
+							<a href="#">Angelos</a>
+						</h3>
+					</div>
+					<div class="p-desc">
+						<p>
+							Angelos is an ecommerce website created for a school project,
+							its purpose is to connect the worlds top leading shoe brands
+							into ONE website to make your shopping experience more easier, convinient, and more exclusive.
+						</p>
+					</div>
+
+					<ul class="p-links">
+						<li>
+							<a href="https://github.com/Oniely/WebDev/tree/main/angelos" target="_blank">
+								<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+									stroke="currentColor" stroke-width="2" stroke-linecap="round"
+									stroke-linejoin="round" class="feather feather-github">
+									<title>GitHub</title>
+									<path
+										d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+									</path>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="http://angelos.epizy.com" target="_blank">
+								<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+									stroke="currentColor" stroke-width="2" stroke-linecap="round"
+									stroke-linejoin="round" class="feather feather-external-link">
+									<title>External Link</title>
+									<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+									<polyline points="15 3 21 3 21 9"></polyline>
+									<line x1="10" y1="14" x2="21" y2="3"></line>
+								</svg>
+							</a>
+						</li>
+					</ul>
+
+				</div>
+
+			</div>
+
+			<div class="project pj-reverse">
+
+				<div class="p-img">
+					<a href="#">
+						<img src="./images/angelos-web.png" alt="1">
+					</a>
+				</div>
+
+				<div class="p-content">
+
+					<div>
+						<span>Featured Project</span>
+						<h3>
+							<a href="#">Angelos</a>
+						</h3>
+					</div>
+					<div class="p-desc">
+						<p>
+							Angelos is an ecommerce website created for a school project,
+							its purpose is to connect the worlds top leading shoe brands
+							into ONE website to make your shopping experience more easier, convinient, and more exclusive.
+						</p>
+					</div>
+
+					<ul class="p-links">
+						<li>
+							<a href="https://github.com/Oniely/WebDev/tree/main/angelos" target="_blank">
+								<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+									stroke="currentColor" stroke-width="2" stroke-linecap="round"
+									stroke-linejoin="round" class="feather feather-github">
+									<title>GitHub</title>
+									<path
+										d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+									</path>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="http://angelos.epizy.com" target="_blank">
+								<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+									stroke="currentColor" stroke-width="2" stroke-linecap="round"
+									stroke-linejoin="round" class="feather feather-external-link">
+									<title>External Link</title>
+									<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+									<polyline points="15 3 21 3 21 9"></polyline>
+									<line x1="10" y1="14" x2="21" y2="3"></line>
+								</svg>
+							</a>
+						</li>
+					</ul>
+
+				</div>
+
+			</div>
+
+			<div class="project pj1">
+
+				<div class="p-img">
+					<a href="#">
+						<img src="./images/angelos-web.png" alt="1">
+					</a>
+				</div>
+
+				<div class="p-content">
+
+					<div>
+						<span>Featured Project</span>
+						<h3>
+							<a href="#">Angelos</a>
+						</h3>
+					</div>
+					<div class="p-desc">
+						<p>
+							Angelos is an ecommerce website created for a school project,
+							its purpose is to connect the worlds top leading shoe brands
+							into ONE website to make your shopping experience more easier, convinient, and more exclusive.
+						</p>
+					</div>
+
+					<ul class="p-links">
+						<li>
+							<a href="https://github.com/Oniely/WebDev/tree/main/angelos" target="_blank">
+								<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+									stroke="currentColor" stroke-width="2" stroke-linecap="round"
+									stroke-linejoin="round" class="feather feather-github">
+									<title>GitHub</title>
+									<path
+										d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+									</path>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="http://angelos.epizy.com" target="_blank">
+								<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+									stroke="currentColor" stroke-width="2" stroke-linecap="round"
+									stroke-linejoin="round" class="feather feather-external-link">
+									<title>External Link</title>
+									<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+									<polyline points="15 3 21 3 21 9"></polyline>
+									<line x1="10" y1="14" x2="21" y2="3"></line>
+								</svg>
+							</a>
+						</li>
+					</ul>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</section>
+	
+	<section class="notables">
+
+		<div class="notables-head">
+			<h1>Notable Projects</h1>
+		</div>
+
+	</section>
+
+	<script src="./script/nav.js"></script>
+	<script src="./script/resize.js"></script>
+</body>
+
+</html>
