@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&family=La+Belle+Aurore&family=Montserrat:wght@100;500&family=Poppins:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.login {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;    
+}
+
+.login .wave {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.login-hero {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.login-hero img {
+    width: 500px;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+form {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+	position: relative;
+	overflow: hidden;
+	transition: 0.5s;
+}
+
+.fcon {
+	display: flex;
+	align-items: center;
+	padding: 2rem;
+	
+}
+
+.form1 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 20px;
+	transition: 0.5s;
+}
+
+.form1 {
+	position: absolute;
+	top: 28px;
+	left: 138px;
+}
+
+.form2 {
+	display: grid;
+	grid-template-columns: repeat(2, 4fr);
+	gap: 35px;
+	position: relative;
+	left: 600px;
+	transition: 0.5s ease;
+}
+
+.form2 .inputs {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 250px;
+}
+
+
+.form2 .inputs label {
+	font-size: 18px;
+}
+
+.form2 .inputs input,
+.form2 .inputs select {
+    font-size: 18px;
+	padding: 10px 8px;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #333;
+    color: rgb(15, 15, 15);
+    width: 100%;
+}
+
+.form2 > button {
+	outline: none;
+    border: none;
+    background: #D69049;
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .4s;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.form2 > button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    color: #e3e2e2;
+}
+
+.form2 > button:active {
+    transform: translateY(0px);
+}
+
+
+.login-container form img {
+    width: 100px;
+}
+
+.login-container form h1 {
+    font-size: 3rem;
+    color: #333;
+    text-transform: uppercase;
+    margin: 15px 0;
+    letter-spacing: 5px;
+}
+
+.input-div {
+    display: flex;
+    margin: 15px 0;
+    padding: 5px 0;
+    width: auto;
+}
+
+.input-div .i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;	
+    transition: color 0.2s ease-in-out;
+    margin: 0 10px 0 0;
+    font-size: 16 px;
+}
+
+
+.input-div:focus-within .i {
+    color: #865DFF;
+  }
+
+.input-div .input {
+    padding: 10px 8px;
+    outline: none;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #333;
+    font-size: 18px;
+    color: rgb(15, 15, 15);
+    width: 250px;
+}
+
+::placeholder {
+    color: #333;
+    opacity: 1;
+}
+
+.signUp {
+    margin: 0 0 0 100px;
+    text-decoration: none;
+    color: #191825;
+    font-size: 14px;
+    transition: .3s;
+}
+
+.signUp:hover {
+    color: #865DFF;
+}
+
+.signUp:active {
+    color: #e3e2e2;
+}
+
+.signIn {
+    margin: 0 0 0 85px;
+    text-decoration: none;
+    color: #191825;
+    font-size: 14px;
+    transition: .3s;
+}
+
+.signIn:hover {
+    color: #865DFF;
+}
+
+.signIn:active {
+    color: #e3e2e2;
+}
+
+.logBtn {
+    outline: none;
+    border: none;
+    background: #D69049;
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: .4s;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.logBtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    color: #e3e2e2;
+}
+
+.logBtn:active {
+    transform: translateY(0px);
+}
+
+#warning {
+	color: rgb(163, 0, 0);
+}
+
+#warning2 {
+	color: rgb(15, 15, 15);
+}
