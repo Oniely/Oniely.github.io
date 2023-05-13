@@ -512,7 +512,7 @@ h2 {
 
 .mepic .container {
 	width: 100%;
-	height: 70%;
+	height: 80%;
 }
 
 .mepic .container img {
@@ -797,13 +797,14 @@ svg {
 
 .contacts {
 	width: 100%;
-	height: 80vh;
+	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	background: var(--primary-color);
 	padding: 0 25%;
+	box-shadow: 3px 3px 3px 5px rgba(0,0,0,0.9);
 }
 
 .c-container {
@@ -850,20 +851,94 @@ svg {
 	border-radius: 5px;
 	background: var(--primary-color);
 	z-index: 2;
+	box-shadow: 0 3px rgba(0,0,0,0.9);
 	transition: transform 0.4s ease;
 }
 
 .c-container a:hover {
-	transform: translateY(-3px);
+	transform: translateY(-2px);
 	box-shadow: 0 7px rgba(0,0,0,0.9);
 	transition: transform 0.4s ease;
 }
 
 .c-container a:active {
 	transform: translateY(0);
-	box-shadow: 0 4px rgba(0,0,0,0.9);
+	box-shadow: 0 6px rgba(0,0,0,0.9);
 	transition: transform 0.4s ease;
 }
+
+footer {
+	width: 100%;
+	height: 20vh;
+	background: var(--primary-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	box-shadow: 0 0 3px #ccc;
+	background: var(--dirt-white);
+	box-shadow: inset 0px 3px 3px -3px rgba(50, 50, 50, 0.75);
+}
+
+footer .details {
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+	z-index: 2;
+}
+
+.details span {
+	font-size: 1rem;
+	color: var(--gray-color);
+}
+
+.details ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.details ul a {
+	font-size: 1rem;
+	color: var(--gray-color);
+}
+
+.bt-top {
+	width: 120px;
+	height: 80px;
+	position: absolute;
+	top: -3rem;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	border-radius: 50px 50px 0 0;
+	background: var(--dirt-white);
+	box-shadow: inset 0px 3px 3px -3px rgba(50, 50, 50, 0.75);
+	transition: transform 0.3s ease;
+	padding: 15px;
+	z-index: 1;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.bt-top svg {
+	transform: scale(2.5);
+	fill: var(--dark-color);
+}
+
+/* .bt-top:hover {
+	transform: translateY(-3px);
+}
+
+.bt-top img {
+	width: 100%;
+	height: 100%;
+	border-radius: 50px 50px 0 0;
+	object-fit: cover;
+} */
 
 @media only screen and (max-width: 1024px) {
 
