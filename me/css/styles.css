@@ -803,8 +803,7 @@ svg {
 	align-items: center;
 	flex-direction: column;
 	background: var(--primary-color);
-	padding: 0 25%;
-	box-shadow: 3px 3px 3px 5px rgba(0,0,0,0.9);
+	padding: 0 20%;
 }
 
 .c-container {
@@ -821,16 +820,17 @@ svg {
 .c-container h1 {
 	font-size: 3.5rem;
 	font-weight: 900;
-	margin: 15px 0;
+	margin: -30px 0 15px 0;
 	color: var(--dark-color);
 	white-space: nowrap;
+	letter-spacing: 1px;
 }
 
 .c-container p {
     font-size: 18px;
 	font-weight: 400;
 	color: var(--dark-color);
-	margin: 5px 0 15px 0;
+	margin: 5px 0 10px 0;
 	display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -841,6 +841,7 @@ svg {
 
 
 .c-container a {
+	font-size: 18px;
 	padding: 1rem 1.8rem;
 	display: flex;
 	justify-content: center;
@@ -868,7 +869,7 @@ svg {
 
 footer {
 	width: 100%;
-	height: 15vh;
+	height: 20vh;
 	background: var(--primary-color);
 	display: flex;
 	justify-content: center;
@@ -965,6 +966,23 @@ footer .details {
 
 @media only screen and (max-width: 768px) {
 
+	.c-contacts {
+		padding: 0 15%;
+	}
+
+	.c-container h1{
+		font-size: 3rem;
+		margin: -40px 0 15px 0;
+	}
+
+	.c-container p {
+		font-size: 16px;
+	}
+
+	.c-container a {
+		font-size: 16px;
+	}
+		
 	.center .role {
 		margin-right: 2vw;
 	}
@@ -1180,6 +1198,14 @@ footer .details {
 
 @media only screen and (max-width: 720px) {
 	
+	footer .details {
+		justify-content: center;
+	}
+
+	.details ul {
+		display: none;
+	}
+
 	nav {
 		padding: 0 2rem;
 	}
@@ -1221,6 +1247,19 @@ footer .details {
 }
 
 @media only screen and (max-width: 425px) {
+
+	.c-contacts {
+		padding: 0 10%;
+	}
+
+	.c-container h1{
+		font-size: clamp(2.5rem, 10vw, 3rem);
+		margin: -50px 0 15px 0;
+	}
+
+	.c-container p {
+		font-size: 14px;
+	}
 
 	nav {
 		padding: 0 1.5rem;
