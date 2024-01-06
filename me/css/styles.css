@@ -545,7 +545,7 @@ h2 {
 
 .navbar {
     position: fixed;
-    inset: 0 0 0 60%;
+    inset: 0 0 0 50%;
     z-index: 1000;
     padding: min(30vh, 10rem) 1.5rem;
     flex-direction: column;
@@ -1123,7 +1123,7 @@ footer .details {
 
     .nav-links {
         position: fixed;
-        inset: 0 0 0 50%;
+        inset: 0 0 0 0%;
         z-index: 1000;
         padding: min(30vh, 10rem) 1.5rem;
         flex-direction: column;
@@ -1133,14 +1133,14 @@ footer .details {
 
         background: rgba(0, 0, 0, 0.5);
         margin-top: -60px;
-        gap: 1rem;
+        gap: 2rem;
         backdrop-filter: blur(1rem);
         transition: transform 350ms ease-out;
         transform: translateX(100%);
     }
 
     .nav-links li a {
-        font-size: clamp(1.5rem, 10vw, 2.5rem);
+        font-size: clamp(4rem, 15vw, 4.5rem);
         line-height: 80px;
         font-weight: 600;
     }
